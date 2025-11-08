@@ -39,7 +39,7 @@ MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/ecommerce
 PORT=5000
 
 🎥 Demo Video
-https://img.youtube.com/vi/VIDEO_ID/0.jpg
+https://drive.google.com/file/d/1stfLXfN4TcelFSMnaTrdQNAh3-MZ7pdI/view?usp=drivesdk
 
 Watch the demo video showing:
 
@@ -52,7 +52,3 @@ Checkout process
 Order confirmation
 
 Responsive design on mobile
-
-1. Navigate to backend directory:
-```bash
-cd backend
