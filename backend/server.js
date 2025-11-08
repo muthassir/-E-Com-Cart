@@ -1,18 +1,23 @@
 const express = require("express")
 const cors = require("cors")
 const dotenv = require("dotenv")
-dotenv.config()
-
 const connectDB = require("./config/db.js")
 
-// connect DB
-connectDB();
+dotenv.config()
 
 const app = express()
 
 // middlewares
 app.use(cors())
 app.use(express.json())
+
+
+// connect DB
+connectDB();
+
+app.use("/api/products", require("./routes/productRoutes.js"))
+app.use("/api/cart", require("./routes/cartRoutes.js"))
+app.use("/api/checkout", require("./routes/checkoutRoutes.js"))
 
 
 app.listen(process.env.PORT, ()=>{
